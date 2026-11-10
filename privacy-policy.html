@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             --text: #f1f5f9;
             --muted: #94a3b8;
         }
+
         @media (prefers-color-scheme: light) {
             :root {
                 --bg: #f8fafc;
@@ -23,7 +25,11 @@
                 --muted: #475569;
             }
         }
-        * { box-sizing: border-box; }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -31,11 +37,13 @@
             color: var(--text);
             line-height: 1.7;
         }
+
         .container {
             max-width: 820px;
             margin: 0 auto;
             padding: 36px 20px 64px;
         }
+
         .card {
             background: var(--surface);
             border: 1px solid var(--border);
@@ -43,12 +51,44 @@
             padding: 28px;
             margin-bottom: 24px;
         }
-        h1 { margin: 0 0 8px; font-size: 28px; text-wrap: balance; }
-        h2 { margin: 22px 0 8px; font-size: 18px; color: var(--primary); text-wrap: balance; }
-        p, li { color: var(--muted); font-size: 15px; text-wrap: pretty; }
-        strong { color: var(--text); }
-        .meta { font-size: 13px; color: var(--muted); margin-bottom: 18px; }
-        .lang-nav { display: flex; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 28px;
+            text-wrap: balance;
+        }
+
+        h2 {
+            margin: 22px 0 8px;
+            font-size: 18px;
+            color: var(--primary);
+            text-wrap: balance;
+        }
+
+        p,
+        li {
+            color: var(--muted);
+            font-size: 15px;
+            text-wrap: pretty;
+        }
+
+        strong {
+            color: var(--text);
+        }
+
+        .meta {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .lang-nav {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+        }
+
         .lang-pill {
             display: inline-block;
             padding: 6px 14px;
@@ -59,9 +99,13 @@
             font-weight: 600;
             font-size: 13px;
         }
-        a { color: var(--primary); }
+
+        a {
+            color: var(--primary);
+        }
     </style>
 </head>
+
 <body>
     <main class="container">
         <div class="lang-nav">
@@ -72,10 +116,12 @@
 
         <article class="card" id="tr">
             <h1>Gizlilik Politikası (TR)</h1>
-            <p class="meta">Uygulama: <strong>Relax IPTV Player</strong> (<code>com.relax.iptvplayer</code>) • Son Güncelleme: 10.11.2026</p>
+            <p class="meta">Uygulama: <strong>Relax IPTV Player</strong> (<code>com.relax.iptvplayer</code>) • Son
+                Güncelleme: 11.11.2026</p>
 
             <p>
-                Bu gizlilik politikası, <strong>Relax IPTV Player</strong> Android ve Android TV uygulamasını kullandığınızda
+                Bu gizlilik politikası, <strong>Relax IPTV Player</strong> Android ve Android TV uygulamasını
+                kullandığınızda
                 verilerin nasıl işlendiğini şeffaf biçimde açıklar.
             </p>
 
@@ -83,48 +129,63 @@
             <p>
                 Relax IPTV Player yalnızca teknik bir medya oynatıcıdır. Uygulama hiçbir canlı TV kanalı, film, dizi,
                 yayın akışı veya M3U çalma listesi sağlamaz, barındırmaz veya satmaz. Kullanıcıların uygulamaya kendi
-                yasal kaynaklarından eklediği içeriklerin telif ve hukuki sorumluluğu tamamen kullanıcının kendisine aittir.
+                yasal kaynaklarından eklediği içeriklerin telif ve hukuki sorumluluğu tamamen kullanıcının kendisine
+                aittir.
             </p>
 
             <h2>2. Cihaz İçi Saklanan Veriler (Sunucuya Gönderilmez)</h2>
             <ul>
-                <li>Eklediğiniz M3U URL'leri, yerel <code>.m3u</code> dosyaları ve Xtream sunucu/kullanıcı bilgileriniz,</li>
-                <li>Favori listeleriniz, izleme geçmişiniz, yarıda kalan yayın konumlarınız ve EPG hatırlatıcılarınız,</li>
+                <li>Eklediğiniz M3U URL'leri, yerel <code>.m3u</code> dosyaları ve Xtream sunucu/kullanıcı bilgileriniz,
+                </li>
+                <li>Favori listeleriniz, izleme geçmişiniz, yarıda kalan yayın konumlarınız ve EPG hatırlatıcılarınız,
+                </li>
                 <li>Ebeveyn kontrolü PIN kodunuz, tema ve dil tercihleriniz</li>
             </ul>
             <p>
-                <strong>yalnızca kendi cihazınızın yerel depolama alanında (Room veritabanı ve SharedPreferences)</strong> saklanır.
+                <strong>yalnızca kendi cihazınızın yerel depolama alanında (Room veritabanı ve
+                    SharedPreferences)</strong> saklanır.
                 Geliştiriciye ait bir bulut veritabanına veya harici sunucuya yüklenmez.
             </p>
 
             <h2>3. Yerel Wi-Fi QR Aktarımı</h2>
             <p>
-                TV veya başka bir cihazdan kablosuz kurulum için kullanılan QR ile aktarım özelliği, yalnızca aynı yerel Wi-Fi
-                ağı üzerinde geçici bir yerel HTTP bağlantısı kurar; veriler internet üzerindeki herhangi bir aracı sunucuya iletilmez.
+                TV veya başka bir cihazdan kablosuz kurulum için kullanılan QR ile aktarım özelliği, yalnızca aynı yerel
+                Wi-Fi
+                ağı üzerinde geçici bir yerel HTTP bağlantısı kurar; veriler internet üzerindeki herhangi bir aracı
+                sunucuya iletilmez.
             </p>
 
             <h2>4. Reklamlar, Google AdMob ve UMP Rıza Yönetimi</h2>
             <p>
-                Ücretsiz <strong>Android telefon ve tablet</strong> sürümlerinde liste içi yerel reklamlar için <strong>Google AdMob</strong>
-                ve Avrupa Ekonomik Alanı / Birleşik Krallık / İsviçre kullanıcıları için <strong>Google User Messaging Platform (UMP)</strong>
-                kullanılır. Bu kapsamda Google Reklam Kimliği (<code>AD_ID</code>), yaklaşık konum veya reklam etkileşim tanı verileri
-                Google'ın gizlilik politikalarına göre işlenebilir.
+                Ücretsiz <strong>Android telefon ve tablet</strong> sürümlerinde liste içi yerel reklamlar için
+                <strong>Google AdMob</strong> ve Avrupa Ekonomik Alanı / Birleşik Krallık / İsviçre kullanıcıları
+                için <strong>Google User Messaging Platform (UMP)</strong> kullanılır. Bu kapsamda reklam sunumu,
+                ölçümleme ve sahtekarlığın önlenmesi amacıyla <strong>Google Reklam Kimliği</strong> (Advertising ID),
+                <strong>IP adresi üzerinden yaklaşık konum</strong> (GPS/tam konum toplanmaz), reklam ve uygulama
+                etkileşimleri ile tanılama (diagnostics) verileri
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google'ın
+                    Gizlilik Politikası</a> uyarınca ve şifreli bağlantı üzerinden işlenebilir. Rızaya tabi bölgelerde
+                reklam tercihlerinizi uygulama içindeki <strong>Ayarlar &gt; Gizlilik ve Reklam Tercihleri</strong>
+                bölümünden dilediğiniz zaman güncelleyebilirsiniz.
             </p>
             <p>
-                <strong>Android TV / TV Box cihazlarında</strong> ve <strong>Relax Pro</strong> aktif kullanıcılarında AdMob SDK başlatılmaz
-                ve hiç reklam gösterilmez.
+                <strong>Android TV / TV Box cihazlarında</strong> ve <strong>Relax Pro</strong> aktif kullanıcılarında
+                AdMob SDK başlatılmaz ve hiç reklam gösterilmez.
             </p>
 
             <h2>5. Uygulama İçi Satın Alımlar (Google Play Billing)</h2>
             <p>
-                Pro üyelik satın alımları ve abonelikler tamamen <strong>Google Play Store Faturalandırma</strong> altyapısı üzerinden işlenir.
+                Pro üyelik satın alımları, abonelikler ve satın alma işlem geçmişiniz tamamen
+                <strong>Google Play Store Faturalandırma</strong> altyapısı üzerinden şifreli olarak işlenir.
                 Kredi kartı veya ödeme bilgileriniz tarafımızca görülmez ve saklanmaz.
             </p>
 
             <h2>6. Üçüncü Taraf Meta Veri Servisleri</h2>
             <p>
-                Çalma listenizdeki film veya diziler için afiş, yıl, puan ve özet bilgisi gösterilirken yalnızca medya başlıkları
-                açık meta veri API'lerine (<strong>TMDB</strong>, OMDb, Wikipedia, TVMaze ve iTunes) sorgu olarak gönderilebilir.
+                Çalma listenizdeki film veya diziler için afiş, yıl, puan ve özet bilgisi gösterilirken yalnızca medya
+                başlıkları
+                açık meta veri API'lerine (<strong>TMDB</strong>, OMDb, Wikipedia, TVMaze ve iTunes) sorgu olarak
+                gönderilebilir.
                 Bu uygulama TMDB API'sini kullanır ancak TMDB tarafından onaylanmamış veya sertifikalandırılmamıştır.
             </p>
 
@@ -135,17 +196,20 @@
 
             <h2>8. İletişim</h2>
             <p>
-                Gizlilik politikası veya haklarınız hakkında sorularınız için geliştirici e-posta adresi üzerinden ulaşabilirsiniz:<br>
+                Gizlilik politikası veya haklarınız hakkında sorularınız için geliştirici e-posta adresi üzerinden
+                ulaşabilirsiniz:<br>
                 <strong>E-posta:</strong> <em>h.kara95@gmail.com</em>
             </p>
         </article>
 
         <article class="card" id="en">
             <h1>Privacy Policy (EN)</h1>
-            <p class="meta">Application: <strong>Relax IPTV Player</strong> (<code>com.relax.iptvplayer</code>) • Last Updated: November 10, 2026</p>
+            <p class="meta">Application: <strong>Relax IPTV Player</strong> (<code>com.relax.iptvplayer</code>) • Last
+                Updated: November 11, 2026</p>
 
             <p>
-                This Privacy Policy explains how information is handled when you use <strong>Relax IPTV Player</strong> on
+                This Privacy Policy explains how information is handled when you use <strong>Relax IPTV Player</strong>
+                on
                 Android phones, tablets, and Android TV devices.
             </p>
 
@@ -158,46 +222,56 @@
 
             <h2>2. Local On-Device Storage</h2>
             <p>
-                Your M3U links, local playlist files, Xtream host credentials, favorites, playback progress, EPG reminders,
+                Your M3U links, local playlist files, Xtream host credentials, favorites, playback progress, EPG
+                reminders,
                 parental control PINs, and app settings are stored <strong>exclusively locally on your device</strong>.
                 We do not operate a developer backend server and never collect or upload your playlists or credentials.
             </p>
 
             <h2>3. Local Wi-Fi QR Transfer</h2>
             <p>
-                When sending a playlist link or credentials via QR code from a phone or computer, data is transferred directly
+                When sending a playlist link or credentials via QR code from a phone or computer, data is transferred
+                directly
                 over your local Wi-Fi network without passing through any remote cloud server.
             </p>
 
             <h2>4. Advertising &amp; Consent (Google AdMob &amp; UMP)</h2>
             <p>
-                On free <strong>Android phone and tablet</strong> versions, the app integrates <strong>Google AdMob</strong> for
-                inline native ads and Google's <strong>User Messaging Platform (UMP)</strong> for consent management. Google may
-                collect device identifiers (<code>AD_ID</code>), diagnostics, and ad interaction data in accordance with
-                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
-                You can update your ad consent anytime inside <strong>Settings &gt; Privacy &amp; Ad Preferences</strong> where required.
+                On free <strong>Android phone and tablet</strong> versions, the app integrates
+                <strong>Google AdMob</strong> for inline native ads and Google's
+                <strong>User Messaging Platform (UMP)</strong> for consent management. For ad delivery, analytics, and
+                fraud prevention, Google may process device identifiers (<strong>Google Advertising ID</strong>),
+                <strong>approximate location inferred from IP address</strong> (GPS/precise location is never
+                collected), app/ad interactions, and diagnostic data over encrypted connections in accordance with
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy
+                    Policy</a>. Where required, you can update your ad consent anytime inside
+                <strong>Settings &gt; Privacy &amp; Ad Preferences</strong>.
             </p>
             <p>
-                <strong>Android TV / TV Box devices</strong> and <strong>Relax Pro</strong> users are completely ad-free and do not
-                initialize the AdMob SDK.
+                <strong>Android TV / TV Box devices</strong> and <strong>Relax Pro</strong> users are completely ad-free
+                and do not initialize the AdMob SDK.
             </p>
 
             <h2>5. In-App Purchases</h2>
             <p>
-                All Pro purchases and subscriptions are processed securely through <strong>Google Play Billing</strong>. We do not
-                have access to your payment card or financial account details.
+                All Pro purchases, subscriptions, and purchase history verification are processed securely over
+                encrypted connections through <strong>Google Play Billing</strong>. We do not have access to your
+                payment card or financial account details.
             </p>
 
             <h2>6. Metadata APIs &amp; Attribution</h2>
             <p>
-                To display posters, ratings, cast, or summaries for movies and series in your library, media titles may be queried
-                against third-party metadata services including <strong>TMDB</strong>, OMDb, Wikipedia, TVMaze, and iTunes.
+                To display posters, ratings, cast, or summaries for movies and series in your library, media titles may
+                be queried
+                against third-party metadata services including <strong>TMDB</strong>, OMDb, Wikipedia, TVMaze, and
+                iTunes.
                 This product uses the TMDB API but is not endorsed or certified by TMDB.
             </p>
 
             <h2>7. Children's Privacy</h2>
             <p>
-                This app is not directed toward children under 13 and does not knowingly collect personal data from children.
+                This app is not directed toward children under 13 and does not knowingly collect personal data from
+                children.
             </p>
 
             <h2>8. Contact</h2>
@@ -208,5 +282,5 @@
         </article>
     </main>
 </body>
-</html>
 
+</html>
