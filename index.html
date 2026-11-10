@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relax IPTV Player — Modern Media Player</title>
+    <style>
+        :root {
+            --bg: #0a0e17;
+            --surface: #121826;
+            --surface-alt: #192234;
+            --border: #25324b;
+            --primary: #38bdf8;
+            --text: #f1f5f9;
+            --muted: #94a3b8;
+            --accent: #10b981;
+        }
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #f8fafc;
+                --surface: #ffffff;
+                --surface-alt: #f1f5f9;
+                --border: #e2e8f0;
+                --primary: #0284c7;
+                --text: #0f172a;
+                --muted: #475569;
+                --accent: #059669;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 20px 64px;
+        }
+        .hero {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        .badge {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--primary);
+            background: rgba(56, 189, 248, 0.14);
+            padding: 5px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            margin: 0 0 10px;
+            font-size: 32px;
+            line-height: 1.2;
+            text-wrap: balance;
+        }
+        p.lead {
+            margin: 0 0 20px;
+            color: var(--muted);
+            font-size: 16px;
+            text-wrap: pretty;
+        }
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        a.btn {
+            display: inline-block;
+            padding: 11px 18px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        a.btn-primary {
+            background: var(--primary);
+            color: #ffffff;
+        }
+        a.btn-secondary {
+            background: var(--surface-alt);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+        }
+        .card h2 {
+            margin: 0 0 8px;
+            font-size: 17px;
+        }
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        .disclaimer {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            border-radius: 14px;
+            padding: 20px 22px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+        .disclaimer strong {
+            color: var(--text);
+        }
+        footer {
+            margin-top: 32px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="hero">
+            <span class="badge">Android • Tablet • Android TV</span>
+            <h1>Relax IPTV Player</h1>
+            <p class="lead">
+                Kullanıcıların kendi yasal M3U / M3U Plus çalma listelerini ve Xtream API bağlantılarını
+                düzenli, hızlı ve modern bir arayüzle oynatabilmesi için geliştirilmiş medya oynatıcı.<br>
+                A clean, fast, modern media player built for your own legal M3U playlists and Xtream streams.
+            </p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="./privacy-policy.html">Gizlilik Politikası / Privacy Policy</a>
+                <a class="btn btn-secondary" href="#disclaimer">Yasal Uyarı / Legal Disclaimer</a>
+            </div>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h2>Sade ve Hızlı Deneyim</h2>
+                <p>Dokunmatik telefonlar, tabletler ve Android TV uzaktan kumandaları (D-Pad) için özel adaptif yerleşim.</p>
+            </article>
+            <article class="card">
+                <h2>Cihaz İçi Gizlilik</h2>
+                <p>Eklediğiniz çalma listeleri, favoriler ve ayarlar yalnızca kendi cihazınızın yerel depolamasında saklanır.</p>
+            </article>
+            <article class="card">
+                <h2>Çoklu Format Desteği</h2>
+                <p>AndroidX Media3 (ExoPlayer) altyapısı ile HLS (.m3u8), MPEG-TS, MP4 ve MKV akışları için akıcı oynatma.</p>
+            </article>
+        </section>
+
+        <section class="disclaimer" id="disclaimer">
+            <p>
+                <strong>Önemli Yasal Uyarı / Legal Disclaimer (TR &amp; EN):</strong><br>
+                Relax IPTV Player yalnızca teknik bir medya oynatıcıdır. Uygulama içerisinde hiçbir canlı TV kanalı,
+                film, dizi, yayın akışı veya hazır M3U çalma listesi bulunmaz, sağlanmaz ve satılmaz.
+                Uygulamaya eklenen içeriklerin telif ve yasal sorumluluğu tamamen kullanıcıya aittir.<br><br>
+                Relax IPTV Player is strictly a media player tool. It does not provide, host, sell, or promote
+                any channels, media content, or playlists. Users must provide their own legal content sources.
+            </p>
+        </section>
+
+        <footer>
+            <p>Relax IPTV Player • <a href="./privacy-policy.html" style="color: var(--primary);">Privacy Policy</a></p>
+        </footer>
+    </main>
+</body>
+</html>
+

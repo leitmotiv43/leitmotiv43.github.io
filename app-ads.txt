@@ -1,0 +1,7 @@
+# AdMob app-ads.txt sablonu:
+# AdMob Konsolundan (admob.google.com) pub-XXXXXXXXXXXXXXXX kimliginizi aldiktan sonra
+# yukaridaki "#" baslik satirlarini kaldirip yalnizca asagidaki tek satiri gercek Publisher ID'niz ile birakin:
+#
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+
