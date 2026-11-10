@@ -1,0 +1,10 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="bbb.sample" tvg-name="Big Buck Bunny (Demo)" group-title="Open Source Streams",Big Buck Bunny — Sample Stream
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-id="tos.sample" tvg-name="Tears of Steel (Subtitles)" group-title="Open Source Streams",Tears of Steel — Demo Stream
+https://test-streams.mux.dev/tos_ismc/main.m3u8
+#EXTINF:-1 tvg-id="tos.unified" tvg-name="Tears of Steel (Adaptive)" group-title="Sample Movies",Tears of Steel — Creative Commons Film
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+#EXTINF:-1 tvg-id="bipbop.16x9" tvg-name="Reference 16:9 HLS" group-title="Technical Tests",Reference Test Stream (16:9 HLS)
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
+
